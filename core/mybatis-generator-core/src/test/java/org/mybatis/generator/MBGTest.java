@@ -29,8 +29,9 @@ public class MBGTest {
 
 
     public static void main(String[] args) {
+
         ShellRunner.start(new String[]{
-                "-configfile", ".\\mybatis-generator-core\\src\\test\\resources\\generatorConfig.xml","-overwrite"
+                "-configfile", "C:\\Users\\bvzx\\Documents\\mybatis-generator-modification\\core\\mybatis-generator-core\\src\\test\\resources\\generatorConfig.xml","-overwrite"
         });
     }
 }

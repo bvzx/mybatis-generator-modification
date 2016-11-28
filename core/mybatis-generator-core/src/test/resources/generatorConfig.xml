@@ -28,7 +28,7 @@
 			targetProject="${target.project}">
 			<property name="enableSubPackages" value="ture" />
 <!-- 			<property name="trimStrings" value="true" /> -->
-			<property name="useActualColumnNames" value="true" />
+			<property name="useActualColumnNames" value="false" />
 		</javaModelGenerator>
 
 		<!--生成xml mapper文件 路径 -->
@@ -47,7 +47,7 @@
 		<table tableName="%" enableCountByExample="false"
 			enableDeleteByExample="false" enableSelectByExample="false"
 			enableUpdateByExample="false">
-			<property name="useActualColumnNames" value="true" />
+			<property name="useActualColumnNames" value="false" />
 		</table>
 	</context>
 </generatorConfiguration>

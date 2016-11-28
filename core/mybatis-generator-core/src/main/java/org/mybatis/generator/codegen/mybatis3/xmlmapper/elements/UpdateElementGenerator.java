@@ -72,11 +72,11 @@ public class UpdateElementGenerator extends
             sb.append(" != null"); //$NON-NLS-1$
             if (introspectedColumn.getJdbcTypeName().equalsIgnoreCase("TINYINT")
                     ||introspectedColumn.getJdbcTypeName().equalsIgnoreCase("INTEGER")){
-                sb.append(" and "+introspectedColumn.getJavaProperty()+" !=  -1 ");
+                sb.append(" and item."+introspectedColumn.getJavaProperty()+" !=  -1 ");
             }else if (introspectedColumn.getJdbcTypeName().equalsIgnoreCase("TIMESTAMP")){
                 sb.append(" ");
             }else{
-                sb.append(" and "+introspectedColumn.getJavaProperty()+" !=  \'\'");
+                sb.append(" and item."+introspectedColumn.getJavaProperty()+" !=  \'\'");
             }
             isNotNullElement.addAttribute(new Attribute("test", sb.toString())); //$NON-NLS-1$
             set.addElement(isNotNullElement);

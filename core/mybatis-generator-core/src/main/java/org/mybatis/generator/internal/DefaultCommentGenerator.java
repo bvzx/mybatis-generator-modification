@@ -71,9 +71,9 @@ public class DefaultCommentGenerator implements CommentGenerator {
         if (compilationUnit instanceof InnerClass){
             InnerClass in=(InnerClass)compilationUnit;
             in.addJavaDocLine("/**");
-            in.addJavaDocLine(" * 杭州动享互联网技术有限公司");
+            in.addJavaDocLine(" * 杭州东方网升科技有限公司);
             in.addJavaDocLine(" * @ClassName: "+in.getType().getFullyQualifiedName());
-            in.addJavaDocLine(" * @Author "+"dojoy");
+            in.addJavaDocLine(" * @Author "+"wugaoda");
             SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy年MM月dd日");
             in.addJavaDocLine(" * @Date "+simpleDateFormat.format(new Date()));
             in.addJavaDocLine(" * @Description: TODO 这个类是做什么的");
@@ -82,9 +82,9 @@ public class DefaultCommentGenerator implements CommentGenerator {
         if (compilationUnit instanceof Interface){
             Interface in=(Interface)compilationUnit;
             in.addJavaDocLine("/**");
-            in.addJavaDocLine(" * 杭州动享互联网技术有限公司");
+            in.addJavaDocLine(" * 杭州东方网升科技有限公司");
             in.addJavaDocLine(" * @ClassName: "+in.getType().getFullyQualifiedName());
-            in.addJavaDocLine(" * @Author "+"dojoy");
+            in.addJavaDocLine(" * @Author "+"wugaoda");
             SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy年MM月dd日");
             in.addJavaDocLine(" * @Date "+simpleDateFormat.format(new Date()));
             in.addJavaDocLine(" * @Description: TODO 这个类是做什么的");
